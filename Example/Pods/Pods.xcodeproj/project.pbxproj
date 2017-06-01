@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04697850EA8F50D278DAD28C286AC6B1 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FB3FA7B0500653CA6923D93FAE8619 /* ReplaceMe.swift */; };
 		0790492FE331AC1394C924F4B5D05EF0 /* Pods-Simplifier_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41001EEA8231E9727D2CD41B15FE49C2 /* Pods-Simplifier_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0EF9287E8044EB5FDABB864283DA6783 /* Pods-Simplifier_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 005028E420B8A3AAB4B1EE6102CF5635 /* Pods-Simplifier_Example-dummy.m */; };
 		143AA79B8379A2624BC0454CEB09CAD2 /* Pods-Simplifier_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D25666CB71ACF2337AACEB83252AAAA /* Pods-Simplifier_Tests-dummy.m */; };
 		48BFD09C70835155D5F91A577A4AF582 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		657575592221475059B2CEEE0B2576D3 /* Pods-Simplifier_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA6203F9BFF778C6E5249E6A35D40017 /* Pods-Simplifier_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6AB3045666297F910FD386C916D15FB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		71E9721E1EE026C2000E058A /* DictionarySimplifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716AFEF91EE0245F00E7E342 /* DictionarySimplifier.swift */; };
+		71E972201EE0299D000E058A /* UIViewSimplifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9721F1EE0299D000E058A /* UIViewSimplifier.swift */; };
+		71E972221EE02A8F000E058A /* DateSimplifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E972211EE02A8F000E058A /* DateSimplifier.swift */; };
+		71E972241EE02AB6000E058A /* UIViewControllerSimplifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E972231EE02AB6000E058A /* UIViewControllerSimplifier.swift */; };
+		71E972261EE02D2F000E058A /* ArraySimplifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E972251EE02D2F000E058A /* ArraySimplifier.swift */; };
+		71E972281EE03D9F000E058A /* UIImageSimplifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E972271EE03D9F000E058A /* UIImageSimplifier.swift */; };
 		A35AC3E50C777043A8637211A6B5BC3B /* Simplifier-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 49622FF3968C9F6852F0EE8A2EFEACA1 /* Simplifier-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9285AD257F31669DB32A87C0B82EEC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		E6EACA29241308BF065FE62F101A17CD /* Simplifier-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4358D89B438EE55A0DA117B8230BD0F2 /* Simplifier-dummy.m */; };
@@ -32,7 +37,7 @@
 /* Begin PBXFileReference section */
 		005028E420B8A3AAB4B1EE6102CF5635 /* Pods-Simplifier_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Simplifier_Example-dummy.m"; sourceTree = "<group>"; };
 		02E4F98AC3B71634F49699FACB421AEE /* Pods-Simplifier_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Simplifier_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		0888A4C47BB70E8060020EAEF3737582 /* Pods-Simplifier_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Simplifier_Tests.modulemap"; sourceTree = "<group>"; };
+		0888A4C47BB70E8060020EAEF3737582 /* Pods-Simplifier_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Simplifier_Tests.modulemap"; sourceTree = "<group>"; };
 		0D487AD3F47AD276EE53DEE0471EC8BA /* Pods-Simplifier_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Simplifier_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		11492345F241BCC1B82F23A58042581C /* Pods-Simplifier_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Simplifier_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		1791662A1226498D1C0A7E315349E472 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,23 +46,28 @@
 		4358D89B438EE55A0DA117B8230BD0F2 /* Simplifier-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Simplifier-dummy.m"; sourceTree = "<group>"; };
 		483D45BA1BB84AECA1C1B6418AF616B2 /* Simplifier-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Simplifier-prefix.pch"; sourceTree = "<group>"; };
 		49622FF3968C9F6852F0EE8A2EFEACA1 /* Simplifier-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Simplifier-umbrella.h"; sourceTree = "<group>"; };
-		527A318BD17D4C7FB691D73AB653C0CA /* Pods-Simplifier_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Simplifier_Example.modulemap"; sourceTree = "<group>"; };
-		645CB6C429E4EA5AA859DEC5BDF87F16 /* Pods_Simplifier_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Simplifier_Tests.framework; path = "Pods-Simplifier_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		527A318BD17D4C7FB691D73AB653C0CA /* Pods-Simplifier_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Simplifier_Example.modulemap"; sourceTree = "<group>"; };
+		645CB6C429E4EA5AA859DEC5BDF87F16 /* Pods_Simplifier_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simplifier_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		716AFEF91EE0245F00E7E342 /* DictionarySimplifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionarySimplifier.swift; sourceTree = "<group>"; };
+		71E9721F1EE0299D000E058A /* UIViewSimplifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewSimplifier.swift; sourceTree = "<group>"; };
+		71E972211EE02A8F000E058A /* DateSimplifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateSimplifier.swift; sourceTree = "<group>"; };
+		71E972231EE02AB6000E058A /* UIViewControllerSimplifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerSimplifier.swift; sourceTree = "<group>"; };
+		71E972251EE02D2F000E058A /* ArraySimplifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArraySimplifier.swift; sourceTree = "<group>"; };
+		71E972271EE03D9F000E058A /* UIImageSimplifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageSimplifier.swift; sourceTree = "<group>"; };
 		80649A3020F852C919FEC3C70CD8CC32 /* Pods-Simplifier_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Simplifier_Tests-resources.sh"; sourceTree = "<group>"; };
-		80AE8D7764E7B1A54DE3D83C2B2C9756 /* Simplifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Simplifier.framework; path = Simplifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80AE8D7764E7B1A54DE3D83C2B2C9756 /* Simplifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Simplifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A911B30CA465AB31AEB894793D6FAD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88966A3051D4A3F45CD6C268346082A6 /* Pods-Simplifier_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Simplifier_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9145F1193B33E75748B0519BBD0BCF5E /* Pods-Simplifier_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Simplifier_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		97F311AAD6F408DB832A7C769C890B38 /* Pods-Simplifier_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Simplifier_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		97FB3FA7B0500653CA6923D93FAE8619 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		9D25666CB71ACF2337AACEB83252AAAA /* Pods-Simplifier_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Simplifier_Tests-dummy.m"; sourceTree = "<group>"; };
 		9E94134950231437F790F4A74439676D /* Pods-Simplifier_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Simplifier_Example-resources.sh"; sourceTree = "<group>"; };
-		9FF5B6BB29019C14ED573051E3735376 /* Simplifier.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Simplifier.modulemap; sourceTree = "<group>"; };
+		9FF5B6BB29019C14ED573051E3735376 /* Simplifier.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Simplifier.modulemap; sourceTree = "<group>"; };
 		AE6FF42B037BEF666D4CDAEF1C3A9C78 /* Pods-Simplifier_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Simplifier_Example-frameworks.sh"; sourceTree = "<group>"; };
 		BA6203F9BFF778C6E5249E6A35D40017 /* Pods-Simplifier_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Simplifier_Example-umbrella.h"; sourceTree = "<group>"; };
-		C33529B2E14277EB0BA88F8F5F2F4F88 /* Pods_Simplifier_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Simplifier_Example.framework; path = "Pods-Simplifier_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C33529B2E14277EB0BA88F8F5F2F4F88 /* Pods_Simplifier_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simplifier_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F777A50EBCE879015D06D032C64026 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE9C10443494D0BCD9032CE223212592 /* Simplifier.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Simplifier.xcconfig; sourceTree = "<group>"; };
 		D5E7DDDEC9E4C9CF8EC6C8F0F4F15ED0 /* Pods-Simplifier_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Simplifier_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -97,7 +107,6 @@
 			children = (
 				7DB0EAA75159AEACEAC20C19BAF45A45 /* Classes */,
 			);
-			name = Simplifier;
 			path = Simplifier;
 			sourceTree = "<group>";
 		};
@@ -139,9 +148,13 @@
 		7DB0EAA75159AEACEAC20C19BAF45A45 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				97FB3FA7B0500653CA6923D93FAE8619 /* ReplaceMe.swift */,
+				716AFEF91EE0245F00E7E342 /* DictionarySimplifier.swift */,
+				71E9721F1EE0299D000E058A /* UIViewSimplifier.swift */,
+				71E972231EE02AB6000E058A /* UIViewControllerSimplifier.swift */,
+				71E972211EE02A8F000E058A /* DateSimplifier.swift */,
+				71E972251EE02D2F000E058A /* ArraySimplifier.swift */,
+				71E972271EE03D9F000E058A /* UIImageSimplifier.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -314,6 +327,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					4E4F13778FDF6DABF6D1FBB5777EBEE1 = {
+						LastSwiftMigration = 0830;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -347,8 +365,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04697850EA8F50D278DAD28C286AC6B1 /* ReplaceMe.swift in Sources */,
+				71E972201EE0299D000E058A /* UIViewSimplifier.swift in Sources */,
+				71E972221EE02A8F000E058A /* DateSimplifier.swift in Sources */,
 				E6EACA29241308BF065FE62F101A17CD /* Simplifier-dummy.m in Sources */,
+				71E9721E1EE026C2000E058A /* DictionarySimplifier.swift in Sources */,
+				71E972281EE03D9F000E058A /* UIImageSimplifier.swift in Sources */,
+				71E972241EE02AB6000E058A /* UIViewControllerSimplifier.swift in Sources */,
+				71E972261EE02D2F000E058A /* ArraySimplifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +399,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9145F1193B33E75748B0519BBD0BCF5E /* Pods-Simplifier_Example.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -415,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FB447AFA2224DE03FE5B2AFC76A11DE1 /* Pods-Simplifier_Example.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

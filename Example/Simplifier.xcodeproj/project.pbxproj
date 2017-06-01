@@ -28,9 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		32053290C38B830BF899004F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		32053290C38B830BF899004F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		589C0A8CA16500E0FDF1D3D5 /* Pods-Simplifier_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simplifier_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Simplifier_Example/Pods-Simplifier_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5B4C1B98A82DC523F8F145BD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5B4C1B98A82DC523F8F145BD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Simplifier_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simplifier_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +41,7 @@
 		607FACE51AFB9204008FA782 /* Simplifier_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Simplifier_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		762841C1F0171C2BC8C5A0B9 /* Simplifier.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Simplifier.podspec; path = ../Simplifier.podspec; sourceTree = "<group>"; };
+		762841C1F0171C2BC8C5A0B9 /* Simplifier.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Simplifier.podspec; path = ../Simplifier.podspec; sourceTree = "<group>"; };
 		8A8B99B5ADE3301A8D0228B0 /* Pods-Simplifier_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simplifier_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Simplifier_Example/Pods-Simplifier_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E313A89A83EB459FCD9A9042 /* Pods-Simplifier_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simplifier_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Simplifier_Tests/Pods-Simplifier_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E381C6BC4E9DE198C7223216 /* Pods-Simplifier_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simplifier_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Simplifier_Tests/Pods-Simplifier_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -215,10 +215,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = G5Q3NBTLFN;
 						LastSwiftMigration = 0820;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = G5Q3NBTLFN;
 						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -496,12 +498,14 @@
 			baseConfigurationReference = 8A8B99B5ADE3301A8D0228B0 /* Pods-Simplifier_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G5Q3NBTLFN;
 				INFOPLIST_FILE = Simplifier/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -510,12 +514,14 @@
 			baseConfigurationReference = 589C0A8CA16500E0FDF1D3D5 /* Pods-Simplifier_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G5Q3NBTLFN;
 				INFOPLIST_FILE = Simplifier/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -523,6 +529,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E381C6BC4E9DE198C7223216 /* Pods-Simplifier_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = G5Q3NBTLFN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -543,6 +550,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E313A89A83EB459FCD9A9042 /* Pods-Simplifier_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = G5Q3NBTLFN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

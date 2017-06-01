@@ -7,18 +7,26 @@
 //
 
 import UIKit
+import Simplifier
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+       
+        for i in 1...10 {
+            for j in 1...10 {
+                let v = UIView(frame: CGRect(x: i*80, y: j*80, width: 50, height: 50))
+                v.backgroundColor = .green
+                view.addSubview(v)
+            }
+        }
+        
+        let img = UIImageView(image: view.snapshotImage.blurImage(radius: 10))
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        view.addSubview(img)
+        
     }
-
+   
 }
 
