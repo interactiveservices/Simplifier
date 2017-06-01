@@ -1,0 +1,6 @@
+framework module Simplifier {
+  umbrella header "Simplifier-umbrella.h"
+
+  export *
+  module * { export * }
+}
