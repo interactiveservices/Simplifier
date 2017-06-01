@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Simplifier_Example' do
+  pod 'Simplifier', :path => '../'
+
+  target 'Simplifier_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
