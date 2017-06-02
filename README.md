@@ -22,7 +22,7 @@ pod "Simplifier"
 
 ## Usage
 
-##### Dictionary
+#### Dictionary
 
 Compose dictionaries
 ```swift
@@ -30,7 +30,7 @@ var dict = ["one":1]
 dict += ["two":2] + ["three":3] //["two": 2, "one": 1, "three": 3]
 ```
 
-##### UIView
+#### UIView
 
 Make view border with round corners
 ```swift
@@ -48,14 +48,14 @@ Take a screenshot of your view
 let screenshot:UIImage = myView.snapshotImage
 ```
 
-##### UIViewController
+#### UIViewController
 
 Take content view controller of your navigation controller
 ```swift
 let contentVC = destinationVC.contentViewController
 ```
 
-##### Data
+#### Data
 
 Build data in current Calendar with single method and take date components
 ```swift
@@ -64,14 +64,14 @@ dt.month // 6
 dt.year // 2017
 ```
 
-##### Array
+#### Array
 
 Safe array subscript returns optional
 ```swift
 let optionalElement = array[safe: 15]
 ```
 
-##### UIImage
+#### UIImage
 
 Make UIImage of color with rounded corners
 ```swift
@@ -104,7 +104,7 @@ Transform image to single color template
 let maskedImage = myImage.maskWithColor(color: .blue)
 ```
 
-##### String
+#### String
 
 Get right endings for russian countable nouns 
 ```swift
