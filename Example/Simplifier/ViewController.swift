@@ -16,15 +16,11 @@ class ViewController: UIViewController {
        
         for i in 1...10 {
             for j in 1...10 {
-                let v = UIView(frame: CGRect(x: i*80, y: j*80, width: 50, height: 50))
-                v.backgroundColor = .green
+                let v = UIImageView(frame: CGRect(x: i*80, y: j*80, width: 50, height: 50))
+                v.image = UIImage.ofColor(.green, size: v.bounds.size, cornerRadius: 5)
                 view.addSubview(v)
             }
         }
-        
-        let img = UIImageView(image: view.snapshotImage.blurImage(radius: 10))
-
-        view.addSubview(img)
         
     }
    
