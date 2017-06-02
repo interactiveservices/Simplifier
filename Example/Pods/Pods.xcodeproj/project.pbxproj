@@ -19,6 +19,7 @@
 		71E972241EE02AB6000E058A /* UIViewControllerSimplifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E972231EE02AB6000E058A /* UIViewControllerSimplifier.swift */; };
 		71E972261EE02D2F000E058A /* ArraySimplifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E972251EE02D2F000E058A /* ArraySimplifier.swift */; };
 		71E972281EE03D9F000E058A /* UIImageSimplifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E972271EE03D9F000E058A /* UIImageSimplifier.swift */; };
+		71F53FB21EE1521D0068595B /* StringSimplifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F53FB11EE1521D0068595B /* StringSimplifier.swift */; };
 		A35AC3E50C777043A8637211A6B5BC3B /* Simplifier-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 49622FF3968C9F6852F0EE8A2EFEACA1 /* Simplifier-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9285AD257F31669DB32A87C0B82EEC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		E6EACA29241308BF065FE62F101A17CD /* Simplifier-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4358D89B438EE55A0DA117B8230BD0F2 /* Simplifier-dummy.m */; };
@@ -55,6 +56,7 @@
 		71E972231EE02AB6000E058A /* UIViewControllerSimplifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerSimplifier.swift; sourceTree = "<group>"; };
 		71E972251EE02D2F000E058A /* ArraySimplifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArraySimplifier.swift; sourceTree = "<group>"; };
 		71E972271EE03D9F000E058A /* UIImageSimplifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageSimplifier.swift; sourceTree = "<group>"; };
+		71F53FB11EE1521D0068595B /* StringSimplifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringSimplifier.swift; sourceTree = "<group>"; };
 		80649A3020F852C919FEC3C70CD8CC32 /* Pods-Simplifier_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Simplifier_Tests-resources.sh"; sourceTree = "<group>"; };
 		80AE8D7764E7B1A54DE3D83C2B2C9756 /* Simplifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Simplifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A911B30CA465AB31AEB894793D6FAD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				71E972211EE02A8F000E058A /* DateSimplifier.swift */,
 				71E972251EE02D2F000E058A /* ArraySimplifier.swift */,
 				71E972271EE03D9F000E058A /* UIImageSimplifier.swift */,
+				71F53FB11EE1521D0068595B /* StringSimplifier.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				E6EACA29241308BF065FE62F101A17CD /* Simplifier-dummy.m in Sources */,
 				71E9721E1EE026C2000E058A /* DictionarySimplifier.swift in Sources */,
 				71E972281EE03D9F000E058A /* UIImageSimplifier.swift in Sources */,
+				71F53FB21EE1521D0068595B /* StringSimplifier.swift in Sources */,
 				71E972241EE02AB6000E058A /* UIViewControllerSimplifier.swift in Sources */,
 				71E972261EE02D2F000E058A /* ArraySimplifier.swift in Sources */,
 			);

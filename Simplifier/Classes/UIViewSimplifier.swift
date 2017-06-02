@@ -10,17 +10,13 @@ import UIKit
 
 extension UIView {
     
-    public func makeRoundCorners(ofColor color: UIColor, width: CGFloat = 1, radius: CGFloat = 3) {
+    public func makeRoundBorder(ofColor color: UIColor, width: CGFloat = 1, radius: CGFloat = 3) {
         
         layer.borderWidth = width
         layer.borderColor = color.cgColor
         layer.cornerRadius = radius
         clipsToBounds = true
     }
-    
-}
-
-extension UIView {
     
     public func addConstaintsToSuperview(leftOffset: CGFloat, topOffset: CGFloat) {
         
@@ -64,10 +60,6 @@ extension UIView {
                                               multiplier: 1,
                                               constant: width))
     }
-    
-}
-
-extension UIView {
     
     public var snapshotImage: UIImage {
         UIGraphicsBeginImageContextWithOptions(bounds.size, false, UIScreen.main.scale)
