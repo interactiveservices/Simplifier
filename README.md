@@ -50,7 +50,7 @@ let screenshot:UIImage = myView.snapshotImage
 
 #### UIViewController
 
-Take content view controller of your navigation controller
+Take content view controller of your navigation controller if needed
 ```swift
 let contentVC = destinationVC.contentViewController
 ```
@@ -87,11 +87,6 @@ let gradientImage = UIImage.gradientImage(gradient)
 Gaussian blur for UIImage with radius:
 ```swift
 let imageWithBlur = myImage.blurImage(radius: 8)
-```
-
-Get pixel color for image
-```swift
-let color = myImage.pixelColor(for: CGPoint(x:10, y:10))
 ```
 
 Get pixel color for image
