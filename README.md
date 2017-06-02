@@ -104,6 +104,16 @@ Transform image to single color template
 let maskedImage = myImage.maskWithColor(color: .blue)
 ```
 
+Crop image to sqare
+```swift
+let cropped = myImage.squareCroppedImage()
+```
+
+Scale image to size
+```swift
+let resized = myImage.scaledTo(size:mySize)
+```
+
 #### String
 
 Get right endings for russian countable nouns 
@@ -123,6 +133,17 @@ Output:
 7 яиц
 ```
 
+Generate an image from string
+```swift
+let myImage = "STR".generateImage(of: CGSize(width:50,height:50), font: UIFont.systemFont(ofSize: 10), color: .red)
+```
+
+#### NSAttributedString
+
+Easily create NSAttributedString
+```swift
+let attrStr = NSAttributedString(string: "STR", font: font.withSize(10), color: .red)
+```
 
 ## Author
 

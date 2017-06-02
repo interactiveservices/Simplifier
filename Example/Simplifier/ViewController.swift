@@ -21,6 +21,12 @@ class ViewController: UIViewController {
         
         view.backgroundColor = .gray
         
+        let img1 = "РШ".generateImage(of: CGSize(width:50,height:50), font: UIFont.systemFont(ofSize: 10), color: .red)
+        
+        let v1 = UIImageView(frame: CGRect(x: 10, y: 10, width: 50, height: 50))
+        v1.image = img1
+        view.addSubview(v1)
+        
         let img = #imageLiteral(resourceName: "img1")
         
         for i in 1...5 {

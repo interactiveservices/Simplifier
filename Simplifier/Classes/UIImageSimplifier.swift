@@ -123,4 +123,46 @@ extension UIImage {
         return resultImage
     }
     
+    public func squareCroppedImage() -> UIImage {
+        
+        if self.size.width == self.size.height {
+            return self
+        }
+        
+        var mySize:CGFloat
+        var imageRect:CGRect
+        
+        if self.size.width > self.size.height {
+            
+            mySize = self.size.height
+            let xAdjust = (self.size.height - self.size.width)/2
+            imageRect = CGRect(x: xAdjust, y: 0, width: self.size.width, height: self.size.height)
+            
+        } else {
+            
+            mySize = self.size.width
+            let yAdjust = (self.size.width - self.size.height)/2
+            imageRect = CGRect(x: 0, y: yAdjust, width: self.size.width, height: self.size.height)
+            
+        }
+        
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: mySize, height: mySize), false, self.scale)
+        
+        self.draw(in: imageRect)
+        
+        let resultImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        return resultImage
+    }
+    
+    public func scaledTo(size:CGSize) -> UIImage {
+        
+        UIGraphicsBeginImageContextWithOptions(size, false, self.scale);
+        self.draw(in: CGRect(origin: CGPoint.zero, size: size));
+        
+        let resultImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        return resultImage
+    }
+    
 }
