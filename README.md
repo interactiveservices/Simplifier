@@ -64,9 +64,9 @@ dt.month // 6
 dt.year // 2017
 ```
 
-#### Array
+#### Collection
 
-Safe array subscript returns optional
+Safe collection subscript - returns optional
 ```swift
 let optionalElement = array[safe: 15]
 ```

@@ -8,10 +8,9 @@
 
 import Foundation
 
-extension Array {
+extension Collection where Index == Indices.Iterator.Element {
     
-    public subscript(safe index: Index) -> Element? {
+    public subscript(safe index: Index) -> Iterator.Element? {
         return indices.contains(index) ? self[index] : nil
     }
-    
 }
